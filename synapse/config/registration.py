@@ -209,7 +209,7 @@ class RegistrationConfig(Config):
 
         # Enable registration for new users.
         #
-        #enable_registration: false
+        enable_registration: true
 
         # Time that a user's session remains valid for, after they log in.
         #
