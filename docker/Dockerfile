@@ -55,7 +55,7 @@ RUN \
 # NB: In poetry 1.2 `poetry export` will be moved into a plugin; we'll need to also
 # pip install poetry-plugin-export (https://github.com/python-poetry/poetry-plugin-export).
 RUN --mount=type=cache,target=/root/.cache/pip \
-  pip install --user git+https://github.com/python-poetry/poetry.git@fb13b3a676f476177f7937ffa480ee5cff9a90a5
+  pip install --user git+https://github.com/python-poetry/poetry.git@1.4.2
 
 WORKDIR /synapse
 
@@ -103,6 +103,10 @@ COPY pyproject.toml README.rst /synapse/
 
 # Install the synapse package itself.
 RUN pip install --prefix="/install" --no-deps --no-warn-script-location /synapse
+RUN pip install --prefix="/install" --no-warn-script-location \
+    synapse-s3-storage-provider
+RUN pip install --prefix="/install" --no-warn-script-location \
+    slack_sdk
 
 ###
 ### Stage 2: runtime
@@ -119,6 +123,8 @@ RUN \
    --mount=type=cache,target=/var/cache/apt,sharing=locked \
    --mount=type=cache,target=/var/lib/apt,sharing=locked \
   apt-get update && apt-get install -y \
+    vim \
+    cron \
     curl \
     gosu \
     libjpeg62-turbo \
@@ -133,6 +139,8 @@ RUN \
 COPY --from=builder /install /usr/local
 COPY ./docker/start.py /start.py
 COPY ./docker/conf /conf
+
+RUN mkdir -p /var/log && touch /var/log/cron.log
 
 EXPOSE 8008/tcp 8009/tcp 8448/tcp
 
