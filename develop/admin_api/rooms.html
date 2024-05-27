@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="../docs/website_files/table-of-contents.css">
         <link rel="stylesheet" href="../docs/website_files/remove-nav-buttons.css">
         <link rel="stylesheet" href="../docs/website_files/indent-section-headers.css">
+        <link rel="stylesheet" href="../docs/website_files/version-picker.css">
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -76,7 +77,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Introduction</li><li class="chapter-item expanded "><a href="../welcome_and_overview.html">Welcome and Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Setup</li><li class="chapter-item expanded "><a href="../setup/installation.html">Installation</a></li><li class="chapter-item expanded "><a href="../postgres.html">Using Postgres</a></li><li class="chapter-item expanded "><a href="../reverse_proxy.html">Configuring a Reverse Proxy</a></li><li class="chapter-item expanded "><a href="../setup/forward_proxy.html">Configuring a Forward/Outbound Proxy</a></li><li class="chapter-item expanded "><a href="../turn-howto.html">Configuring a Turn Server</a></li><li class="chapter-item expanded "><a href="../delegate.html">Delegation</a></li><li class="chapter-item expanded affix "><li class="part-title">Upgrading</li><li class="chapter-item expanded "><a href="../upgrade.html">Upgrading between Synapse Versions</a></li><li class="chapter-item expanded affix "><li class="part-title">Usage</li><li class="chapter-item expanded "><a href="../federate.html">Federation</a></li><li class="chapter-item expanded "><a href="../usage/configuration/index.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/configuration/config_documentation.html">Configuration Manual</a></li><li class="chapter-item expanded "><a href="../usage/configuration/homeserver_sample_config.html">Homeserver Sample Config File</a></li><li class="chapter-item expanded "><a href="../usage/configuration/logging_sample_config.html">Logging Sample Config File</a></li><li class="chapter-item expanded "><a href="../structured_logging.html">Structured Logging</a></li><li class="chapter-item expanded "><a href="../templates.html">Templates</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/index.html">User Authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/index.html">Single-Sign On</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../openid.html">OpenID Connect</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/cas.html">CAS</a></li><li class="chapter-item expanded "><a href="../sso_mapping_providers.html">SSO Mapping Providers</a></li></ol></li><li class="chapter-item expanded "><a href="../password_auth_providers.html">Password Auth Providers</a></li><li class="chapter-item expanded "><a href="../jwt.html">JSON Web Tokens</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/refresh_tokens.html">Refresh Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="../CAPTCHA_SETUP.html">Registration Captcha</a></li><li class="chapter-item expanded "><a href="../application_services.html">Application Services</a></li><li class="chapter-item expanded "><a href="../server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="../consent_tracking.html">Consent Tracking</a></li><li class="chapter-item expanded "><a href="../development/url_previews.html">URL Previews</a></li><li class="chapter-item expanded "><a href="../user_directory.html">User Directory</a></li><li class="chapter-item expanded "><a href="../message_retention_policies.html">Message Retention Policies</a></li><li class="chapter-item expanded "><a href="../modules/index.html">Pluggable Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modules/writing_a_module.html">Writing a module</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modules/spam_checker_callbacks.html">Spam checker callbacks</a></li><li class="chapter-item expanded "><a href="../modules/third_party_rules_callbacks.html">Third-party rules callbacks</a></li><li class="chapter-item expanded "><a href="../modules/presence_router_callbacks.html">Presence router callbacks</a></li><li class="chapter-item expanded "><a href="../modules/account_validity_callbacks.html">Account validity callbacks</a></li><li class="chapter-item expanded "><a href="../modules/password_auth_provider_callbacks.html">Password auth provider callbacks</a></li><li class="chapter-item expanded "><a href="../modules/background_update_controller_callbacks.html">Background update controller callbacks</a></li><li class="chapter-item expanded "><a href="../modules/account_data_callbacks.html">Account data callbacks</a></li><li class="chapter-item expanded "><a href="../modules/porting_legacy_module.html">Porting a legacy module to the new interface</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../workers.html">Workers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../synctl_workers.html">Using synctl with Workers</a></li><li class="chapter-item expanded "><a href="../systemd-with-workers/index.html">Systemd</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../usage/administration/index.html">Administration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/administration/admin_api/index.html">Admin API</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../admin_api/account_validity.html">Account Validity</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/background_updates.html">Background Updates</a></li><li class="chapter-item expanded "><a href="../admin_api/delete_group.html">Delete Group</a></li><li class="chapter-item expanded "><a href="../admin_api/event_reports.html">Event Reports</a></li><li class="chapter-item expanded "><a href="../admin_api/media_admin_api.html">Media</a></li><li class="chapter-item expanded "><a href="../admin_api/purge_history_api.html">Purge History</a></li><li class="chapter-item expanded "><a href="../admin_api/register_api.html">Register Users</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/registration_tokens.html">Registration Tokens</a></li><li class="chapter-item expanded "><a href="../admin_api/room_membership.html">Manipulate Room Membership</a></li><li class="chapter-item expanded "><a href="../admin_api/rooms.html" class="active">Rooms</a></li><li class="chapter-item expanded "><a href="../admin_api/server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="../admin_api/statistics.html">Statistics</a></li><li class="chapter-item expanded "><a href="../admin_api/user_admin_api.html">Users</a></li><li class="chapter-item expanded "><a href="../admin_api/version_api.html">Server Version</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/federation.html">Federation</a></li></ol></li><li class="chapter-item expanded "><a href="../manhole.html">Manhole</a></li><li class="chapter-item expanded "><a href="../metrics-howto.html">Monitoring</a></li><li class="chapter-item expanded "><a href="../usage/administration/understanding_synapse_through_grafana_graphs.html">Understanding Synapse Through Grafana Graphs</a></li><li class="chapter-item expanded "><a href="../usage/administration/useful_sql_for_admins.html">Useful SQL for Admins</a></li><li class="chapter-item expanded "><a href="../usage/administration/database_maintenance_tools.html">Database Maintenance Tools</a></li><li class="chapter-item expanded "><a href="../usage/administration/state_groups.html">State Groups</a></li><li class="chapter-item expanded "><a href="../usage/administration/request_log.html">Request log format</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_faq.html">Admin FAQ</a></li><li class="chapter-item expanded "><div>Scripts</div></li></ol></li><li class="chapter-item expanded "><li class="part-title">Development</li><li class="chapter-item expanded "><a href="../development/contributing_guide.html">Contributing Guide</a></li><li class="chapter-item expanded "><a href="../code_style.html">Code Style</a></li><li class="chapter-item expanded "><a href="../development/releases.html">Release Cycle</a></li><li class="chapter-item expanded "><a href="../development/git.html">Git Usage</a></li><li class="chapter-item expanded "><div>Testing</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/demo.html">Demo scripts</a></li></ol></li><li class="chapter-item expanded "><a href="../opentracing.html">OpenTracing</a></li><li class="chapter-item expanded "><a href="../development/database_schema.html">Database Schemas</a></li><li class="chapter-item expanded "><a href="../development/experimental_features.html">Experimental features</a></li><li class="chapter-item expanded "><a href="../development/dependencies.html">Dependency management</a></li><li class="chapter-item expanded "><div>Synapse Architecture</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/synapse_architecture/cancellation.html">Cancellation</a></li><li class="chapter-item expanded "><a href="../log_contexts.html">Log Contexts</a></li><li class="chapter-item expanded "><a href="../replication.html">Replication</a></li><li class="chapter-item expanded "><a href="../tcp_replication.html">TCP Replication</a></li></ol></li><li class="chapter-item expanded "><a href="../development/internal_documentation/index.html">Internal Documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><div>Single Sign-On</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="../development/cas.html">CAS</a></li></ol></li><li class="chapter-item expanded "><a href="../development/room-dag-concepts.html">Room DAG concepts</a></li><li class="chapter-item expanded "><div>State Resolution</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../auth_chain_difference_algorithm.html">The Auth Chain Difference Algorithm</a></li></ol></li><li class="chapter-item expanded "><a href="../media_repository.html">Media Repository</a></li><li class="chapter-item expanded "><a href="../room_and_user_statistics.html">Room and User Statistics</a></li></ol></li><li class="chapter-item expanded "><div>Scripts</div></li><li class="chapter-item expanded affix "><li class="part-title">Other</li><li class="chapter-item expanded "><a href="../deprecation_policy.html">Dependency Deprecation Policy</a></li><li class="chapter-item expanded "><a href="../other/running_synapse_on_single_board_computers.html">Running Synapse on a Single-Board Computer</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Introduction</li><li class="chapter-item expanded "><a href="../welcome_and_overview.html">Welcome and Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Setup</li><li class="chapter-item expanded "><a href="../setup/installation.html">Installation</a></li><li class="chapter-item expanded "><a href="../postgres.html">Using Postgres</a></li><li class="chapter-item expanded "><a href="../reverse_proxy.html">Configuring a Reverse Proxy</a></li><li class="chapter-item expanded "><a href="../setup/forward_proxy.html">Configuring a Forward/Outbound Proxy</a></li><li class="chapter-item expanded "><a href="../turn-howto.html">Configuring a Turn Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../setup/turn/coturn.html">coturn TURN server</a></li><li class="chapter-item expanded "><a href="../setup/turn/eturnal.html">eturnal TURN server</a></li></ol></li><li class="chapter-item expanded "><a href="../delegate.html">Delegation</a></li><li class="chapter-item expanded affix "><li class="part-title">Upgrading</li><li class="chapter-item expanded "><a href="../upgrade.html">Upgrading between Synapse Versions</a></li><li class="chapter-item expanded affix "><li class="part-title">Usage</li><li class="chapter-item expanded "><a href="../federate.html">Federation</a></li><li class="chapter-item expanded "><a href="../usage/configuration/index.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/configuration/config_documentation.html">Configuration Manual</a></li><li class="chapter-item expanded "><a href="../usage/configuration/homeserver_sample_config.html">Homeserver Sample Config File</a></li><li class="chapter-item expanded "><a href="../usage/configuration/logging_sample_config.html">Logging Sample Config File</a></li><li class="chapter-item expanded "><a href="../structured_logging.html">Structured Logging</a></li><li class="chapter-item expanded "><a href="../templates.html">Templates</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/index.html">User Authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/index.html">Single-Sign On</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../openid.html">OpenID Connect</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/cas.html">CAS</a></li><li class="chapter-item expanded "><a href="../sso_mapping_providers.html">SSO Mapping Providers</a></li></ol></li><li class="chapter-item expanded "><a href="../password_auth_providers.html">Password Auth Providers</a></li><li class="chapter-item expanded "><a href="../jwt.html">JSON Web Tokens</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/refresh_tokens.html">Refresh Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="../CAPTCHA_SETUP.html">Registration Captcha</a></li><li class="chapter-item expanded "><a href="../application_services.html">Application Services</a></li><li class="chapter-item expanded "><a href="../server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="../consent_tracking.html">Consent Tracking</a></li><li class="chapter-item expanded "><a href="../user_directory.html">User Directory</a></li><li class="chapter-item expanded "><a href="../message_retention_policies.html">Message Retention Policies</a></li><li class="chapter-item expanded "><a href="../modules/index.html">Pluggable Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modules/writing_a_module.html">Writing a module</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modules/spam_checker_callbacks.html">Spam checker callbacks</a></li><li class="chapter-item expanded "><a href="../modules/third_party_rules_callbacks.html">Third-party rules callbacks</a></li><li class="chapter-item expanded "><a href="../modules/presence_router_callbacks.html">Presence router callbacks</a></li><li class="chapter-item expanded "><a href="../modules/account_validity_callbacks.html">Account validity callbacks</a></li><li class="chapter-item expanded "><a href="../modules/password_auth_provider_callbacks.html">Password auth provider callbacks</a></li><li class="chapter-item expanded "><a href="../modules/background_update_controller_callbacks.html">Background update controller callbacks</a></li><li class="chapter-item expanded "><a href="../modules/account_data_callbacks.html">Account data callbacks</a></li><li class="chapter-item expanded "><a href="../modules/add_extra_fields_to_client_events_unsigned.html">Add extra fields to client events unsigned section callbacks</a></li><li class="chapter-item expanded "><a href="../modules/porting_legacy_module.html">Porting a legacy module to the new interface</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../workers.html">Workers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../synctl_workers.html">Using synctl with Workers</a></li><li class="chapter-item expanded "><a href="../systemd-with-workers/index.html">Systemd</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../usage/administration/index.html">Administration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/administration/admin_api/index.html">Admin API</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../admin_api/account_validity.html">Account Validity</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/background_updates.html">Background Updates</a></li><li class="chapter-item expanded "><a href="../admin_api/event_reports.html">Event Reports</a></li><li class="chapter-item expanded "><a href="../admin_api/experimental_features.html">Experimental Features</a></li><li class="chapter-item expanded "><a href="../admin_api/media_admin_api.html">Media</a></li><li class="chapter-item expanded "><a href="../admin_api/purge_history_api.html">Purge History</a></li><li class="chapter-item expanded "><a href="../admin_api/register_api.html">Register Users</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/registration_tokens.html">Registration Tokens</a></li><li class="chapter-item expanded "><a href="../admin_api/room_membership.html">Manipulate Room Membership</a></li><li class="chapter-item expanded "><a href="../admin_api/rooms.html" class="active">Rooms</a></li><li class="chapter-item expanded "><a href="../admin_api/server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="../admin_api/statistics.html">Statistics</a></li><li class="chapter-item expanded "><a href="../admin_api/user_admin_api.html">Users</a></li><li class="chapter-item expanded "><a href="../admin_api/version_api.html">Server Version</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/federation.html">Federation</a></li></ol></li><li class="chapter-item expanded "><a href="../manhole.html">Manhole</a></li><li class="chapter-item expanded "><a href="../metrics-howto.html">Monitoring</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/administration/monitoring/reporting_homeserver_usage_statistics.html">Reporting Homeserver Usage Statistics</a></li></ol></li><li class="chapter-item expanded "><a href="../usage/administration/monthly_active_users.html">Monthly Active Users</a></li><li class="chapter-item expanded "><a href="../usage/administration/understanding_synapse_through_grafana_graphs.html">Understanding Synapse Through Grafana Graphs</a></li><li class="chapter-item expanded "><a href="../usage/administration/useful_sql_for_admins.html">Useful SQL for Admins</a></li><li class="chapter-item expanded "><a href="../usage/administration/database_maintenance_tools.html">Database Maintenance Tools</a></li><li class="chapter-item expanded "><a href="../usage/administration/state_groups.html">State Groups</a></li><li class="chapter-item expanded "><a href="../usage/administration/request_log.html">Request log format</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_faq.html">Admin FAQ</a></li><li class="chapter-item expanded "><div>Scripts</div></li></ol></li><li class="chapter-item expanded "><li class="part-title">Development</li><li class="chapter-item expanded "><a href="../development/contributing_guide.html">Contributing Guide</a></li><li class="chapter-item expanded "><a href="../code_style.html">Code Style</a></li><li class="chapter-item expanded "><a href="../development/reviews.html">Reviewing Code</a></li><li class="chapter-item expanded "><a href="../development/releases.html">Release Cycle</a></li><li class="chapter-item expanded "><a href="../development/git.html">Git Usage</a></li><li class="chapter-item expanded "><div>Testing</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/demo.html">Demo scripts</a></li></ol></li><li class="chapter-item expanded "><a href="../opentracing.html">OpenTracing</a></li><li class="chapter-item expanded "><a href="../development/database_schema.html">Database Schemas</a></li><li class="chapter-item expanded "><a href="../development/experimental_features.html">Experimental features</a></li><li class="chapter-item expanded "><a href="../development/dependencies.html">Dependency management</a></li><li class="chapter-item expanded "><div>Synapse Architecture</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/synapse_architecture/cancellation.html">Cancellation</a></li><li class="chapter-item expanded "><a href="../log_contexts.html">Log Contexts</a></li><li class="chapter-item expanded "><a href="../replication.html">Replication</a></li><li class="chapter-item expanded "><a href="../development/synapse_architecture/streams.html">Streams</a></li><li class="chapter-item expanded "><a href="../tcp_replication.html">TCP Replication</a></li><li class="chapter-item expanded "><a href="../development/synapse_architecture/faster_joins.html">Faster remote joins</a></li></ol></li><li class="chapter-item expanded "><a href="../development/internal_documentation/index.html">Internal Documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><div>Single Sign-On</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="../development/cas.html">CAS</a></li></ol></li><li class="chapter-item expanded "><a href="../development/room-dag-concepts.html">Room DAG concepts</a></li><li class="chapter-item expanded "><div>State Resolution</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../auth_chain_difference_algorithm.html">The Auth Chain Difference Algorithm</a></li></ol></li><li class="chapter-item expanded "><a href="../media_repository.html">Media Repository</a></li><li class="chapter-item expanded "><a href="../room_and_user_statistics.html">Room and User Statistics</a></li></ol></li><li class="chapter-item expanded "><div>Scripts</div></li><li class="chapter-item expanded affix "><li class="part-title">Other</li><li class="chapter-item expanded "><a href="../deprecation_policy.html">Dependency Deprecation Policy</a></li><li class="chapter-item expanded "><a href="../other/running_synapse_on_single_board_computers.html">Running Synapse on a Single-Board Computer</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -103,6 +104,18 @@
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
+                        <div class="version-picker">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span></span>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <input type="hidden" name="version">
+                                <ul class="dropdown-menu">
+                                    <!-- Versions will be added dynamically in version-picker.js -->
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <h1 class="menu-title">Synapse</h1>
@@ -151,7 +164,7 @@
 server. There are various parameters available that allow for filtering and
 sorting the returned list. This API supports pagination.</p>
 <p>To use it, you will need to authenticate by providing an <code>access_token</code>
-for a server admin: see <a href="../usage/administration/admin_api">Admin API</a>.</p>
+for a server admin: see <a href="../usage/administration/admin_api/">Admin API</a>.</p>
 <p><strong>Parameters</strong></p>
 <p>The following query parameters are available:</p>
 <ul>
@@ -217,6 +230,7 @@ Specifically, rooms are selected if the search term is contained in</p>
 <li><code>guest_access</code> - Whether guests can join the room. One of: [&quot;can_join&quot;, &quot;forbidden&quot;].</li>
 <li><code>history_visibility</code> - Who can see the room history. One of: [&quot;invited&quot;, &quot;joined&quot;, &quot;shared&quot;, &quot;world_readable&quot;].</li>
 <li><code>state_events</code> - Total number of state_events of a room. Complexity of the room.</li>
+<li><code>room_type</code> - The type of the room taken from the room's creation event; for example &quot;m.space&quot; if the room is a space. If the room does not define a type, the value will be <code>null</code>.</li>
 </ul>
 </li>
 </ul>
@@ -257,7 +271,8 @@ get the &quot;previous page&quot; of results.</li>
       &quot;join_rules&quot;: &quot;invite&quot;,
       &quot;guest_access&quot;: null,
       &quot;history_visibility&quot;: &quot;shared&quot;,
-      &quot;state_events&quot;: 93534
+      &quot;state_events&quot;: 93534,
+      &quot;room_type&quot;: &quot;m.space&quot;
     },
     ... (8 hidden items) ...
     {
@@ -274,7 +289,8 @@ get the &quot;previous page&quot; of results.</li>
       &quot;join_rules&quot;: &quot;invite&quot;,
       &quot;guest_access&quot;: null,
       &quot;history_visibility&quot;: &quot;shared&quot;,
-      &quot;state_events&quot;: 8345
+      &quot;state_events&quot;: 8345,
+      &quot;room_type&quot;: null
     }
   ],
   &quot;offset&quot;: 0,
@@ -301,7 +317,8 @@ get the &quot;previous page&quot; of results.</li>
       &quot;join_rules&quot;: &quot;invite&quot;,
       &quot;guest_access&quot;: null,
       &quot;history_visibility&quot;: &quot;shared&quot;,
-      &quot;state_events&quot;: 8
+      &quot;state_events&quot;: 8,
+      &quot;room_type&quot;: null
     }
   ],
   &quot;offset&quot;: 0,
@@ -328,7 +345,8 @@ get the &quot;previous page&quot; of results.</li>
       &quot;join_rules&quot;: &quot;invite&quot;,
       &quot;guest_access&quot;: null,
       &quot;history_visibility&quot;: &quot;shared&quot;,
-      &quot;state_events&quot;: 93534
+      &quot;state_events&quot;: 93534,
+      &quot;room_type&quot;: null
     },
     ... (98 hidden items) ...
     {
@@ -345,7 +363,8 @@ get the &quot;previous page&quot; of results.</li>
       &quot;join_rules&quot;: &quot;invite&quot;,
       &quot;guest_access&quot;: null,
       &quot;history_visibility&quot;: &quot;shared&quot;,
-      &quot;state_events&quot;: 8345
+      &quot;state_events&quot;: 8345,
+      &quot;room_type&quot;: &quot;m.space&quot;
     }
   ],
   &quot;offset&quot;: 0,
@@ -376,7 +395,9 @@ parameter to the value of <code>next_token</code>.</p>
       &quot;join_rules&quot;: &quot;invite&quot;,
       &quot;guest_access&quot;: null,
       &quot;history_visibility&quot;: &quot;shared&quot;,
-      &quot;state_events&quot;: 93534
+      &quot;state_events&quot;: 93534,
+      &quot;room_type&quot;: &quot;m.space&quot;
+
     },
     ... (48 hidden items) ...
     {
@@ -393,7 +414,9 @@ parameter to the value of <code>next_token</code>.</p>
       &quot;join_rules&quot;: &quot;invite&quot;,
       &quot;guest_access&quot;: null,
       &quot;history_visibility&quot;: &quot;shared&quot;,
-      &quot;state_events&quot;: 8345
+      &quot;state_events&quot;: 8345,
+      &quot;room_type&quot;: null
+
     }
   ],
   &quot;offset&quot;: 100,
@@ -424,6 +447,10 @@ end of the list.</p>
 <li><code>guest_access</code> - Whether guests can join the room. One of: [&quot;can_join&quot;, &quot;forbidden&quot;].</li>
 <li><code>history_visibility</code> - Who can see the room history. One of: [&quot;invited&quot;, &quot;joined&quot;, &quot;shared&quot;, &quot;world_readable&quot;].</li>
 <li><code>state_events</code> - Total number of state_events of a room. Complexity of the room.</li>
+<li><code>room_type</code> - The type of the room taken from the room's creation event; for example &quot;m.space&quot; if the room is a space.
+If the room does not define a type, the value will be <code>null</code>.</li>
+<li><code>forgotten</code> - Whether all local users have
+<a href="https://spec.matrix.org/latest/client-server-api/#leaving-rooms">forgotten</a> the room.</li>
 </ul>
 <p>The API is:</p>
 <pre><code>GET /_synapse/admin/v1/rooms/&lt;room_id&gt;
@@ -446,9 +473,12 @@ end of the list.</p>
   &quot;join_rules&quot;: &quot;invite&quot;,
   &quot;guest_access&quot;: null,
   &quot;history_visibility&quot;: &quot;shared&quot;,
-  &quot;state_events&quot;: 93534
+  &quot;state_events&quot;: 93534,
+  &quot;room_type&quot;: &quot;m.space&quot;,
+  &quot;forgotten&quot;: false
 }
 </code></pre>
+<p><em>Changed in Synapse 1.66:</em> Added the <code>forgotten</code> key to the response body.</p>
 <h1 id="room-members-api"><a class="header" href="#room-members-api">Room Members API</a></h1>
 <p>The Room Members admin API allows server admins to get a list of all members of a room.</p>
 <p>The response includes the following fields:</p>
@@ -487,6 +517,134 @@ end of the list.</p>
   ]
 }
 </code></pre>
+<h1 id="room-messages-api"><a class="header" href="#room-messages-api">Room Messages API</a></h1>
+<p>The Room Messages admin API allows server admins to get all messages
+sent to a room in a given timeframe. There are various parameters available
+that allow for filtering and ordering the returned list. This API supports pagination.</p>
+<p>To use it, you will need to authenticate by providing an <code>access_token</code>
+for a server admin: see <a href="../usage/administration/admin_api/">Admin API</a>.</p>
+<p>This endpoint mirrors the <a href="https://spec.matrix.org/v1.1/client-server-api/#get_matrixclientv3roomsroomidmessages">Matrix Spec defined Messages API</a>.</p>
+<p>The API is:</p>
+<pre><code>GET /_synapse/admin/v1/rooms/&lt;room_id&gt;/messages
+</code></pre>
+<p><strong>Parameters</strong></p>
+<p>The following path parameters are required:</p>
+<ul>
+<li><code>room_id</code> - The ID of the room you wish you fetch messages from.</li>
+</ul>
+<p>The following query parameters are available:</p>
+<ul>
+<li><code>from</code> (required) - The token to start returning events from. This token can be obtained from a prev_batch
+or next_batch token returned by the /sync endpoint, or from an end token returned by a previous request to this endpoint.</li>
+<li><code>to</code> - The token to stop returning events at.</li>
+<li><code>limit</code> - The maximum number of events to return. Defaults to <code>10</code>.</li>
+<li><code>filter</code> - A JSON RoomEventFilter to filter returned events with.</li>
+<li><code>dir</code> - The direction to return events from. Either <code>f</code> for forwards or <code>b</code> for backwards. Setting
+this value to <code>b</code> will reverse the above sort order. Defaults to <code>f</code>.</li>
+</ul>
+<p><strong>Response</strong></p>
+<p>The following fields are possible in the JSON response body:</p>
+<ul>
+<li><code>chunk</code> - A list of room events. The order depends on the dir parameter.
+Note that an empty chunk does not necessarily imply that no more events are available. Clients should continue to paginate until no end property is returned.</li>
+<li><code>end</code> - A token corresponding to the end of chunk. This token can be passed back to this endpoint to request further events.
+If no further events are available, this property is omitted from the response.</li>
+<li><code>start</code> - A token corresponding to the start of chunk.</li>
+<li><code>state</code> - A list of state events relevant to showing the chunk.</li>
+</ul>
+<p><strong>Example</strong></p>
+<p>For more details on each chunk, read <a href="https://spec.matrix.org/v1.1/client-server-api/#get_matrixclientv3roomsroomidmessages">the Matrix specification</a>.</p>
+<pre><code class="language-json">{
+  &quot;chunk&quot;: [
+    {
+      &quot;content&quot;: {
+        &quot;body&quot;: &quot;This is an example text message&quot;,
+        &quot;format&quot;: &quot;org.matrix.custom.html&quot;,
+        &quot;formatted_body&quot;: &quot;&lt;b&gt;This is an example text message&lt;/b&gt;&quot;,
+        &quot;msgtype&quot;: &quot;m.text&quot;
+      },
+      &quot;event_id&quot;: &quot;$143273582443PhrSn:example.org&quot;,
+      &quot;origin_server_ts&quot;: 1432735824653,
+      &quot;room_id&quot;: &quot;!636q39766251:example.com&quot;,
+      &quot;sender&quot;: &quot;@example:example.org&quot;,
+      &quot;type&quot;: &quot;m.room.message&quot;,
+      &quot;unsigned&quot;: {
+        &quot;age&quot;: 1234
+      }
+    },
+    {
+      &quot;content&quot;: {
+        &quot;name&quot;: &quot;The room name&quot;
+      },
+      &quot;event_id&quot;: &quot;$143273582443PhrSn:example.org&quot;,
+      &quot;origin_server_ts&quot;: 1432735824653,
+      &quot;room_id&quot;: &quot;!636q39766251:example.com&quot;,
+      &quot;sender&quot;: &quot;@example:example.org&quot;,
+      &quot;state_key&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;m.room.name&quot;,
+      &quot;unsigned&quot;: {
+        &quot;age&quot;: 1234
+      }
+    },
+    {
+      &quot;content&quot;: {
+        &quot;body&quot;: &quot;Gangnam Style&quot;,
+        &quot;info&quot;: {
+          &quot;duration&quot;: 2140786,
+          &quot;h&quot;: 320,
+          &quot;mimetype&quot;: &quot;video/mp4&quot;,
+          &quot;size&quot;: 1563685,
+          &quot;thumbnail_info&quot;: {
+            &quot;h&quot;: 300,
+            &quot;mimetype&quot;: &quot;image/jpeg&quot;,
+            &quot;size&quot;: 46144,
+            &quot;w&quot;: 300
+          },
+          &quot;thumbnail_url&quot;: &quot;mxc://example.org/FHyPlCeYUSFFxlgbQYZmoEoe&quot;,
+          &quot;w&quot;: 480
+        },
+        &quot;msgtype&quot;: &quot;m.video&quot;,
+        &quot;url&quot;: &quot;mxc://example.org/a526eYUSFFxlgbQYZmo442&quot;
+      },
+      &quot;event_id&quot;: &quot;$143273582443PhrSn:example.org&quot;,
+      &quot;origin_server_ts&quot;: 1432735824653,
+      &quot;room_id&quot;: &quot;!636q39766251:example.com&quot;,
+      &quot;sender&quot;: &quot;@example:example.org&quot;,
+      &quot;type&quot;: &quot;m.room.message&quot;,
+      &quot;unsigned&quot;: {
+        &quot;age&quot;: 1234
+      }
+    }
+  ],
+  &quot;end&quot;: &quot;t47409-4357353_219380_26003_2265&quot;,
+  &quot;start&quot;: &quot;t47429-4392820_219380_26003_2265&quot;
+}
+</code></pre>
+<h1 id="room-timestamp-to-event-api"><a class="header" href="#room-timestamp-to-event-api">Room Timestamp to Event API</a></h1>
+<p>The Room Timestamp to Event API endpoint fetches the <code>event_id</code> of the closest event to the given
+timestamp (<code>ts</code> query parameter) in the given direction (<code>dir</code> query parameter).</p>
+<p>Useful for cases like jump to date so you can start paginating messages from
+a given date in the archive.</p>
+<p>The API is:</p>
+<pre><code>  GET /_synapse/admin/v1/rooms/&lt;room_id&gt;/timestamp_to_event
+</code></pre>
+<p><strong>Parameters</strong></p>
+<p>The following path parameters are required:</p>
+<ul>
+<li><code>room_id</code> - The ID of the room you wish to check.</li>
+</ul>
+<p>The following query parameters are available:</p>
+<ul>
+<li><code>ts</code> - a timestamp in milliseconds where we will find the closest event in
+the given direction.</li>
+<li><code>dir</code> - can be <code>f</code> or <code>b</code> to indicate forwards and backwards in time from the
+given timestamp. Defaults to <code>f</code>.</li>
+</ul>
+<p><strong>Response</strong></p>
+<ul>
+<li><code>event_id</code> - The event ID closest to the given timestamp.</li>
+<li><code>origin_server_ts</code> - The timestamp of the event in milliseconds since the Unix epoch.</li>
+</ul>
 <h1 id="block-room-api"><a class="header" href="#block-room-api">Block Room API</a></h1>
 <p>The Block Room admin API allows server admins to block and unblock rooms,
 and query to see if a given room is blocked.
@@ -994,5 +1152,7 @@ that were deleted.</p>
 
         <!-- Custom JS scripts -->
         <script type="text/javascript" src="../docs/website_files/table-of-contents.js"></script>
+        <script type="text/javascript" src="../docs/website_files/version-picker.js"></script>
+        <script type="text/javascript" src="../docs/website_files/version.js"></script>
     </body>
 </html>

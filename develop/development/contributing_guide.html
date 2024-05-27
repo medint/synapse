@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="../docs/website_files/table-of-contents.css">
         <link rel="stylesheet" href="../docs/website_files/remove-nav-buttons.css">
         <link rel="stylesheet" href="../docs/website_files/indent-section-headers.css">
+        <link rel="stylesheet" href="../docs/website_files/version-picker.css">
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -76,7 +77,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Introduction</li><li class="chapter-item expanded "><a href="../welcome_and_overview.html">Welcome and Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Setup</li><li class="chapter-item expanded "><a href="../setup/installation.html">Installation</a></li><li class="chapter-item expanded "><a href="../postgres.html">Using Postgres</a></li><li class="chapter-item expanded "><a href="../reverse_proxy.html">Configuring a Reverse Proxy</a></li><li class="chapter-item expanded "><a href="../setup/forward_proxy.html">Configuring a Forward/Outbound Proxy</a></li><li class="chapter-item expanded "><a href="../turn-howto.html">Configuring a Turn Server</a></li><li class="chapter-item expanded "><a href="../delegate.html">Delegation</a></li><li class="chapter-item expanded affix "><li class="part-title">Upgrading</li><li class="chapter-item expanded "><a href="../upgrade.html">Upgrading between Synapse Versions</a></li><li class="chapter-item expanded affix "><li class="part-title">Usage</li><li class="chapter-item expanded "><a href="../federate.html">Federation</a></li><li class="chapter-item expanded "><a href="../usage/configuration/index.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/configuration/config_documentation.html">Configuration Manual</a></li><li class="chapter-item expanded "><a href="../usage/configuration/homeserver_sample_config.html">Homeserver Sample Config File</a></li><li class="chapter-item expanded "><a href="../usage/configuration/logging_sample_config.html">Logging Sample Config File</a></li><li class="chapter-item expanded "><a href="../structured_logging.html">Structured Logging</a></li><li class="chapter-item expanded "><a href="../templates.html">Templates</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/index.html">User Authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/index.html">Single-Sign On</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../openid.html">OpenID Connect</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/cas.html">CAS</a></li><li class="chapter-item expanded "><a href="../sso_mapping_providers.html">SSO Mapping Providers</a></li></ol></li><li class="chapter-item expanded "><a href="../password_auth_providers.html">Password Auth Providers</a></li><li class="chapter-item expanded "><a href="../jwt.html">JSON Web Tokens</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/refresh_tokens.html">Refresh Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="../CAPTCHA_SETUP.html">Registration Captcha</a></li><li class="chapter-item expanded "><a href="../application_services.html">Application Services</a></li><li class="chapter-item expanded "><a href="../server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="../consent_tracking.html">Consent Tracking</a></li><li class="chapter-item expanded "><a href="../development/url_previews.html">URL Previews</a></li><li class="chapter-item expanded "><a href="../user_directory.html">User Directory</a></li><li class="chapter-item expanded "><a href="../message_retention_policies.html">Message Retention Policies</a></li><li class="chapter-item expanded "><a href="../modules/index.html">Pluggable Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modules/writing_a_module.html">Writing a module</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modules/spam_checker_callbacks.html">Spam checker callbacks</a></li><li class="chapter-item expanded "><a href="../modules/third_party_rules_callbacks.html">Third-party rules callbacks</a></li><li class="chapter-item expanded "><a href="../modules/presence_router_callbacks.html">Presence router callbacks</a></li><li class="chapter-item expanded "><a href="../modules/account_validity_callbacks.html">Account validity callbacks</a></li><li class="chapter-item expanded "><a href="../modules/password_auth_provider_callbacks.html">Password auth provider callbacks</a></li><li class="chapter-item expanded "><a href="../modules/background_update_controller_callbacks.html">Background update controller callbacks</a></li><li class="chapter-item expanded "><a href="../modules/account_data_callbacks.html">Account data callbacks</a></li><li class="chapter-item expanded "><a href="../modules/porting_legacy_module.html">Porting a legacy module to the new interface</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../workers.html">Workers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../synctl_workers.html">Using synctl with Workers</a></li><li class="chapter-item expanded "><a href="../systemd-with-workers/index.html">Systemd</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../usage/administration/index.html">Administration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/administration/admin_api/index.html">Admin API</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../admin_api/account_validity.html">Account Validity</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/background_updates.html">Background Updates</a></li><li class="chapter-item expanded "><a href="../admin_api/delete_group.html">Delete Group</a></li><li class="chapter-item expanded "><a href="../admin_api/event_reports.html">Event Reports</a></li><li class="chapter-item expanded "><a href="../admin_api/media_admin_api.html">Media</a></li><li class="chapter-item expanded "><a href="../admin_api/purge_history_api.html">Purge History</a></li><li class="chapter-item expanded "><a href="../admin_api/register_api.html">Register Users</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/registration_tokens.html">Registration Tokens</a></li><li class="chapter-item expanded "><a href="../admin_api/room_membership.html">Manipulate Room Membership</a></li><li class="chapter-item expanded "><a href="../admin_api/rooms.html">Rooms</a></li><li class="chapter-item expanded "><a href="../admin_api/server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="../admin_api/statistics.html">Statistics</a></li><li class="chapter-item expanded "><a href="../admin_api/user_admin_api.html">Users</a></li><li class="chapter-item expanded "><a href="../admin_api/version_api.html">Server Version</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/federation.html">Federation</a></li></ol></li><li class="chapter-item expanded "><a href="../manhole.html">Manhole</a></li><li class="chapter-item expanded "><a href="../metrics-howto.html">Monitoring</a></li><li class="chapter-item expanded "><a href="../usage/administration/understanding_synapse_through_grafana_graphs.html">Understanding Synapse Through Grafana Graphs</a></li><li class="chapter-item expanded "><a href="../usage/administration/useful_sql_for_admins.html">Useful SQL for Admins</a></li><li class="chapter-item expanded "><a href="../usage/administration/database_maintenance_tools.html">Database Maintenance Tools</a></li><li class="chapter-item expanded "><a href="../usage/administration/state_groups.html">State Groups</a></li><li class="chapter-item expanded "><a href="../usage/administration/request_log.html">Request log format</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_faq.html">Admin FAQ</a></li><li class="chapter-item expanded "><div>Scripts</div></li></ol></li><li class="chapter-item expanded "><li class="part-title">Development</li><li class="chapter-item expanded "><a href="../development/contributing_guide.html" class="active">Contributing Guide</a></li><li class="chapter-item expanded "><a href="../code_style.html">Code Style</a></li><li class="chapter-item expanded "><a href="../development/releases.html">Release Cycle</a></li><li class="chapter-item expanded "><a href="../development/git.html">Git Usage</a></li><li class="chapter-item expanded "><div>Testing</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/demo.html">Demo scripts</a></li></ol></li><li class="chapter-item expanded "><a href="../opentracing.html">OpenTracing</a></li><li class="chapter-item expanded "><a href="../development/database_schema.html">Database Schemas</a></li><li class="chapter-item expanded "><a href="../development/experimental_features.html">Experimental features</a></li><li class="chapter-item expanded "><a href="../development/dependencies.html">Dependency management</a></li><li class="chapter-item expanded "><div>Synapse Architecture</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/synapse_architecture/cancellation.html">Cancellation</a></li><li class="chapter-item expanded "><a href="../log_contexts.html">Log Contexts</a></li><li class="chapter-item expanded "><a href="../replication.html">Replication</a></li><li class="chapter-item expanded "><a href="../tcp_replication.html">TCP Replication</a></li></ol></li><li class="chapter-item expanded "><a href="../development/internal_documentation/index.html">Internal Documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><div>Single Sign-On</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="../development/cas.html">CAS</a></li></ol></li><li class="chapter-item expanded "><a href="../development/room-dag-concepts.html">Room DAG concepts</a></li><li class="chapter-item expanded "><div>State Resolution</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../auth_chain_difference_algorithm.html">The Auth Chain Difference Algorithm</a></li></ol></li><li class="chapter-item expanded "><a href="../media_repository.html">Media Repository</a></li><li class="chapter-item expanded "><a href="../room_and_user_statistics.html">Room and User Statistics</a></li></ol></li><li class="chapter-item expanded "><div>Scripts</div></li><li class="chapter-item expanded affix "><li class="part-title">Other</li><li class="chapter-item expanded "><a href="../deprecation_policy.html">Dependency Deprecation Policy</a></li><li class="chapter-item expanded "><a href="../other/running_synapse_on_single_board_computers.html">Running Synapse on a Single-Board Computer</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Introduction</li><li class="chapter-item expanded "><a href="../welcome_and_overview.html">Welcome and Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Setup</li><li class="chapter-item expanded "><a href="../setup/installation.html">Installation</a></li><li class="chapter-item expanded "><a href="../postgres.html">Using Postgres</a></li><li class="chapter-item expanded "><a href="../reverse_proxy.html">Configuring a Reverse Proxy</a></li><li class="chapter-item expanded "><a href="../setup/forward_proxy.html">Configuring a Forward/Outbound Proxy</a></li><li class="chapter-item expanded "><a href="../turn-howto.html">Configuring a Turn Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../setup/turn/coturn.html">coturn TURN server</a></li><li class="chapter-item expanded "><a href="../setup/turn/eturnal.html">eturnal TURN server</a></li></ol></li><li class="chapter-item expanded "><a href="../delegate.html">Delegation</a></li><li class="chapter-item expanded affix "><li class="part-title">Upgrading</li><li class="chapter-item expanded "><a href="../upgrade.html">Upgrading between Synapse Versions</a></li><li class="chapter-item expanded affix "><li class="part-title">Usage</li><li class="chapter-item expanded "><a href="../federate.html">Federation</a></li><li class="chapter-item expanded "><a href="../usage/configuration/index.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/configuration/config_documentation.html">Configuration Manual</a></li><li class="chapter-item expanded "><a href="../usage/configuration/homeserver_sample_config.html">Homeserver Sample Config File</a></li><li class="chapter-item expanded "><a href="../usage/configuration/logging_sample_config.html">Logging Sample Config File</a></li><li class="chapter-item expanded "><a href="../structured_logging.html">Structured Logging</a></li><li class="chapter-item expanded "><a href="../templates.html">Templates</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/index.html">User Authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/index.html">Single-Sign On</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../openid.html">OpenID Connect</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/single_sign_on/cas.html">CAS</a></li><li class="chapter-item expanded "><a href="../sso_mapping_providers.html">SSO Mapping Providers</a></li></ol></li><li class="chapter-item expanded "><a href="../password_auth_providers.html">Password Auth Providers</a></li><li class="chapter-item expanded "><a href="../jwt.html">JSON Web Tokens</a></li><li class="chapter-item expanded "><a href="../usage/configuration/user_authentication/refresh_tokens.html">Refresh Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="../CAPTCHA_SETUP.html">Registration Captcha</a></li><li class="chapter-item expanded "><a href="../application_services.html">Application Services</a></li><li class="chapter-item expanded "><a href="../server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="../consent_tracking.html">Consent Tracking</a></li><li class="chapter-item expanded "><a href="../user_directory.html">User Directory</a></li><li class="chapter-item expanded "><a href="../message_retention_policies.html">Message Retention Policies</a></li><li class="chapter-item expanded "><a href="../modules/index.html">Pluggable Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modules/writing_a_module.html">Writing a module</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../modules/spam_checker_callbacks.html">Spam checker callbacks</a></li><li class="chapter-item expanded "><a href="../modules/third_party_rules_callbacks.html">Third-party rules callbacks</a></li><li class="chapter-item expanded "><a href="../modules/presence_router_callbacks.html">Presence router callbacks</a></li><li class="chapter-item expanded "><a href="../modules/account_validity_callbacks.html">Account validity callbacks</a></li><li class="chapter-item expanded "><a href="../modules/password_auth_provider_callbacks.html">Password auth provider callbacks</a></li><li class="chapter-item expanded "><a href="../modules/background_update_controller_callbacks.html">Background update controller callbacks</a></li><li class="chapter-item expanded "><a href="../modules/account_data_callbacks.html">Account data callbacks</a></li><li class="chapter-item expanded "><a href="../modules/add_extra_fields_to_client_events_unsigned.html">Add extra fields to client events unsigned section callbacks</a></li><li class="chapter-item expanded "><a href="../modules/porting_legacy_module.html">Porting a legacy module to the new interface</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../workers.html">Workers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../synctl_workers.html">Using synctl with Workers</a></li><li class="chapter-item expanded "><a href="../systemd-with-workers/index.html">Systemd</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../usage/administration/index.html">Administration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/administration/admin_api/index.html">Admin API</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../admin_api/account_validity.html">Account Validity</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/background_updates.html">Background Updates</a></li><li class="chapter-item expanded "><a href="../admin_api/event_reports.html">Event Reports</a></li><li class="chapter-item expanded "><a href="../admin_api/experimental_features.html">Experimental Features</a></li><li class="chapter-item expanded "><a href="../admin_api/media_admin_api.html">Media</a></li><li class="chapter-item expanded "><a href="../admin_api/purge_history_api.html">Purge History</a></li><li class="chapter-item expanded "><a href="../admin_api/register_api.html">Register Users</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/registration_tokens.html">Registration Tokens</a></li><li class="chapter-item expanded "><a href="../admin_api/room_membership.html">Manipulate Room Membership</a></li><li class="chapter-item expanded "><a href="../admin_api/rooms.html">Rooms</a></li><li class="chapter-item expanded "><a href="../admin_api/server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="../admin_api/statistics.html">Statistics</a></li><li class="chapter-item expanded "><a href="../admin_api/user_admin_api.html">Users</a></li><li class="chapter-item expanded "><a href="../admin_api/version_api.html">Server Version</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_api/federation.html">Federation</a></li></ol></li><li class="chapter-item expanded "><a href="../manhole.html">Manhole</a></li><li class="chapter-item expanded "><a href="../metrics-howto.html">Monitoring</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/administration/monitoring/reporting_homeserver_usage_statistics.html">Reporting Homeserver Usage Statistics</a></li></ol></li><li class="chapter-item expanded "><a href="../usage/administration/monthly_active_users.html">Monthly Active Users</a></li><li class="chapter-item expanded "><a href="../usage/administration/understanding_synapse_through_grafana_graphs.html">Understanding Synapse Through Grafana Graphs</a></li><li class="chapter-item expanded "><a href="../usage/administration/useful_sql_for_admins.html">Useful SQL for Admins</a></li><li class="chapter-item expanded "><a href="../usage/administration/database_maintenance_tools.html">Database Maintenance Tools</a></li><li class="chapter-item expanded "><a href="../usage/administration/state_groups.html">State Groups</a></li><li class="chapter-item expanded "><a href="../usage/administration/request_log.html">Request log format</a></li><li class="chapter-item expanded "><a href="../usage/administration/admin_faq.html">Admin FAQ</a></li><li class="chapter-item expanded "><div>Scripts</div></li></ol></li><li class="chapter-item expanded "><li class="part-title">Development</li><li class="chapter-item expanded "><a href="../development/contributing_guide.html" class="active">Contributing Guide</a></li><li class="chapter-item expanded "><a href="../code_style.html">Code Style</a></li><li class="chapter-item expanded "><a href="../development/reviews.html">Reviewing Code</a></li><li class="chapter-item expanded "><a href="../development/releases.html">Release Cycle</a></li><li class="chapter-item expanded "><a href="../development/git.html">Git Usage</a></li><li class="chapter-item expanded "><div>Testing</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/demo.html">Demo scripts</a></li></ol></li><li class="chapter-item expanded "><a href="../opentracing.html">OpenTracing</a></li><li class="chapter-item expanded "><a href="../development/database_schema.html">Database Schemas</a></li><li class="chapter-item expanded "><a href="../development/experimental_features.html">Experimental features</a></li><li class="chapter-item expanded "><a href="../development/dependencies.html">Dependency management</a></li><li class="chapter-item expanded "><div>Synapse Architecture</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/synapse_architecture/cancellation.html">Cancellation</a></li><li class="chapter-item expanded "><a href="../log_contexts.html">Log Contexts</a></li><li class="chapter-item expanded "><a href="../replication.html">Replication</a></li><li class="chapter-item expanded "><a href="../development/synapse_architecture/streams.html">Streams</a></li><li class="chapter-item expanded "><a href="../tcp_replication.html">TCP Replication</a></li><li class="chapter-item expanded "><a href="../development/synapse_architecture/faster_joins.html">Faster remote joins</a></li></ol></li><li class="chapter-item expanded "><a href="../development/internal_documentation/index.html">Internal Documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><div>Single Sign-On</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="../development/cas.html">CAS</a></li></ol></li><li class="chapter-item expanded "><a href="../development/room-dag-concepts.html">Room DAG concepts</a></li><li class="chapter-item expanded "><div>State Resolution</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../auth_chain_difference_algorithm.html">The Auth Chain Difference Algorithm</a></li></ol></li><li class="chapter-item expanded "><a href="../media_repository.html">Media Repository</a></li><li class="chapter-item expanded "><a href="../room_and_user_statistics.html">Room and User Statistics</a></li></ol></li><li class="chapter-item expanded "><div>Scripts</div></li><li class="chapter-item expanded affix "><li class="part-title">Other</li><li class="chapter-item expanded "><a href="../deprecation_policy.html">Dependency Deprecation Policy</a></li><li class="chapter-item expanded "><a href="../other/running_synapse_on_single_board_computers.html">Running Synapse on a Single-Board Computer</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -103,6 +104,18 @@
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
+                        <div class="version-picker">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span></span>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <input type="hidden" name="version">
+                                <ul class="dropdown-menu">
+                                    <!-- Versions will be added dynamically in version-picker.js -->
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <h1 class="menu-title">Synapse</h1>
@@ -163,7 +176,10 @@ recommended for development. More information about WSL can be found at
 <a href="https://docs.microsoft.com/en-us/windows/wsl/install">https://docs.microsoft.com/en-us/windows/wsl/install</a>. Running Synapse natively
 on Windows is not officially supported.</p>
 <p>The code of Synapse is written in Python 3. To do pretty much anything, you'll need <a href="https://www.python.org/downloads/">a recent version of Python 3</a>. Your Python also needs support for <a href="https://docs.python.org/3/library/venv.html">virtual environments</a>. This is usually built-in, but some Linux distributions like Debian and Ubuntu split it out into its own package. Running <code>sudo apt install python3-venv</code> should be enough.</p>
+<p>A recent version of the Rust compiler is needed to build the native modules. The
+easiest way of installing the latest version is to use <a href="https://rustup.rs/">rustup</a>.</p>
 <p>Synapse can connect to PostgreSQL via the <a href="https://pypi.org/project/psycopg2/">psycopg2</a> Python library. Building this library from source requires access to PostgreSQL's C header files. On Debian or Ubuntu Linux, these can be installed with <code>sudo apt install libpq-dev</code>.</p>
+<p>Synapse has an optional, improved user search with better Unicode support. For that you need the development package of <code>libicu</code>. On Debian or Ubuntu Linux, this can be installed with <code>sudo apt install libicu-dev</code>.</p>
 <p>The source code of Synapse is hosted on GitHub. You will also need <a href="https://github.com/git-guides/install-git">a recent version of git</a>.</p>
 <p>For some tests, you will need <a href="https://docs.docker.com/get-docker/">a recent version of Docker</a>.</p>
 <h1 id="3-get-the-source"><a class="header" href="#3-get-the-source">3. Get the source.</a></h1>
@@ -177,21 +193,46 @@ git checkout develop
 <p>If you need help getting started with git, this is beyond the scope of the document, but you
 can find many good git tutorials on the web.</p>
 <h1 id="4-install-the-dependencies"><a class="header" href="#4-install-the-dependencies">4. Install the dependencies</a></h1>
+<p>Before installing the Python dependencies, make sure you have installed a recent version
+of Rust (see the &quot;What do I need?&quot; section above). The easiest way of installing the
+latest version is to use <a href="https://rustup.rs/">rustup</a>.</p>
 <p>Synapse uses the <a href="https://python-poetry.org/">poetry</a> project to manage its dependencies
 and development environment. Once you have installed Python 3 and added the
 source, you should install <code>poetry</code>.
 Of their installation methods, we recommend
 <a href="https://python-poetry.org/docs/#installing-with-pipx">installing <code>poetry</code> using <code>pipx</code></a>,</p>
 <pre><code class="language-shell">pip install --user pipx
-pipx install poetry
+pipx install poetry==1.5.1  # Problems with Poetry 1.6, see https://github.com/matrix-org/synapse/issues/16147
 </code></pre>
 <p>but see poetry's <a href="https://python-poetry.org/docs/#installation">installation instructions</a>
 for other installation methods.</p>
+<p>Developing Synapse requires Poetry version 1.3.2 or later.</p>
 <p>Next, open a terminal and install dependencies as follows:</p>
 <pre><code class="language-sh">cd path/where/you/have/cloned/the/repository
 poetry install --extras all
 </code></pre>
-<p>This will install the runtime and developer dependencies for the project.</p>
+<p>This will install the runtime and developer dependencies for the project.  Be sure to check
+that the <code>poetry install</code> step completed cleanly.</p>
+<h2 id="running-synapse-via-poetry"><a class="header" href="#running-synapse-via-poetry">Running Synapse via poetry</a></h2>
+<p>To start a local instance of Synapse in the locked poetry environment, create a config file:</p>
+<pre><code class="language-sh">cp docs/sample_config.yaml homeserver.yaml
+cp docs/sample_log_config.yaml log_config.yaml
+</code></pre>
+<p>Now edit <code>homeserver.yaml</code>, things you might want to change include:</p>
+<ul>
+<li>Set a <code>server_name</code></li>
+<li>Adjusting paths to be correct for your system like the <code>log_config</code> to point to the log config you just copied</li>
+<li>Using a <a href="https://matrix-org.github.io/synapse/latest/usage/configuration/config_documentation.html#database">PostgreSQL database instead of SQLite</a></li>
+<li>Adding a <a href="https://matrix-org.github.io/synapse/latest/usage/configuration/config_documentation.html#registration_shared_secret"><code>registration_shared_secret</code></a> so you can use <a href="https://matrix-org.github.io/synapse/latest/setup/installation.html#registering-a-user"><code>register_new_matrix_user</code> command</a>.</li>
+</ul>
+<p>And then run Synapse with the following command:</p>
+<pre><code class="language-sh">poetry run python -m synapse.app.homeserver -c homeserver.yaml
+</code></pre>
+<p>If you get an error like the following:</p>
+<pre><code>importlib.metadata.PackageNotFoundError: matrix-synapse
+</code></pre>
+<p>this probably indicates that the <code>poetry install</code> step did not complete cleanly - go back and
+resolve any issues and re-run until successful.</p>
 <h1 id="5-get-in-touch"><a class="header" href="#5-get-in-touch">5. Get in touch.</a></h1>
 <p>Join our developer community on Matrix: <a href="https://matrix.to/#/#synapse-dev:matrix.org">#synapse-dev:matrix.org</a>!</p>
 <h1 id="6-pick-an-issue"><a class="header" href="#6-pick-an-issue">6. Pick an issue.</a></h1>
@@ -211,8 +252,8 @@ Synapse developers.
 regarding Synapse's Admin API, which is used mostly by sysadmins and external
 service developers.</p>
 <p>Synapse's code style is documented <a href="../code_style.html">here</a>. Please follow
-it, including the conventions for the <a href="../code_style.html#configuration-file-format">sample configuration
-file</a>.</p>
+it, including the conventions for <a href="../code_style.html#configuration-code-and-documentation-format">configuration
+options and documentation</a>.</p>
 <p>We welcome improvements and additions to our documentation itself! When
 writing new pages, please
 <a href="https://github.com/matrix-org/synapse/tree/develop/docs#adding-to-the-documentation">build <code>docs</code> to a book</a>
@@ -221,8 +262,12 @@ to check that your contributions render correctly. The docs are written in
 <p>Some documentation also exists in <a href="https://github.com/matrix-org/synapse/wiki">Synapse's GitHub
 Wiki</a>, although this is primarily
 contributed to by community authors.</p>
+<p>When changes are made to any Rust code then you must call either <code>poetry install</code>
+or <code>maturin develop</code> (if installed) to rebuild the Rust code. Using <a href="https://github.com/PyO3/maturin"><code>maturin</code></a>
+is quicker than <code>poetry install</code>, so is recommended when making frequent
+changes to the Rust code.</p>
 <h1 id="8-test-test-test"><a class="header" href="#8-test-test-test">8. Test, test, test!</a></h1>
-<p><a name="test-test-test"></a></p>
+<p><a name="test-test-test" id="test-test-test"></a></p>
 <p>While you're developing and before submitting a patch, you'll
 want to test your code.</p>
 <h2 id="run-the-linters"><a class="header" href="#run-the-linters">Run the linters.</a></h2>
@@ -248,6 +293,9 @@ Make sure that you have saved all your files.</p>
 was broken. They are slower than the linters but will typically catch more errors.</p>
 <pre><code class="language-sh">poetry run trial tests
 </code></pre>
+<p>You can run unit tests in parallel by specifying <code>-jX</code> argument to <code>trial</code> where <code>X</code> is the number of parallel runners you want. To use 4 cpu cores, you would run them like:</p>
+<pre><code class="language-sh">poetry run trial -j4 tests
+</code></pre>
 <p>If you wish to only run <em>some</em> unit tests, you may specify
 another module instead of <code>tests</code> - or a test class or a method:</p>
 <pre><code class="language-sh">poetry run trial tests.rest.admin.test_room tests.handlers.test_admin.ExfiltrateData.test_invite
@@ -269,7 +317,7 @@ working directory. Typically, this ends up being <code>_trial_temp/test.db</code
 <p>The database file can then be inspected with:</p>
 <pre><code class="language-sh">sqlite3 _trial_temp/test.db
 </code></pre>
-<p>Note that the database file is cleared at the beginning of each test run. Thus it 
+<p>Note that the database file is cleared at the beginning of each test run. Thus it
 will always only contain the data generated by the <em>last run test</em>. Though generally
 when debugging, one is only running a single test anyway.</p>
 <h3 id="running-tests-under-postgresql"><a class="header" href="#running-tests-under-postgresql">Running tests under PostgreSQL</a></h3>
@@ -282,7 +330,7 @@ useful to reproduce this locally.</p>
 <h4 id="using-docker"><a class="header" href="#using-docker">Using Docker</a></h4>
 <p>The easiest way to do so is to run Postgres via a docker container. In one
 terminal:</p>
-<pre><code class="language-shell">docker run --rm -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_USER=postgres -e POSTGRES_DB=postgress -p 5432:5432 postgres:14
+<pre><code class="language-shell">docker run --rm -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_USER=postgres -e POSTGRES_DB=postgres -p 5432:5432 postgres:14
 </code></pre>
 <p>If you see an error like</p>
 <pre><code>docker: Error response from daemon: driver failed programming external connectivity on endpoint nice_ride (b57bbe2e251b70015518d00c9981e8cb8346b5c785250341a6c53e3c899875f1): Error starting userland proxy: listen tcp4 0.0.0.0:5432: bind: address already in use.
@@ -320,7 +368,7 @@ anything was broken. They are slower than the unit tests but will
 typically catch more errors.</p>
 <p>The following command will let you run the integration test with the most common
 configuration:</p>
-<pre><code class="language-sh">$ docker run --rm -it -v /path/where/you/have/cloned/the/repository\:/src:ro -v /path/to/where/you/want/logs\:/logs matrixdotorg/sytest-synapse:buster
+<pre><code class="language-sh">$ docker run --rm -it -v /path/where/you/have/cloned/the/repository\:/src:ro -v /path/to/where/you/want/logs\:/logs matrixdotorg/sytest-synapse:focal
 </code></pre>
 <p>(Note that the paths must be full paths! You could also write <code>$(realpath relative/path)</code> if needed.)</p>
 <p>This configuration should generally cover your needs.</p>
@@ -345,11 +393,26 @@ Here is how to run your local Synapse checkout against your local Complement che
 <p>The above will run a monolithic (single-process) Synapse with SQLite as the database. For other configurations, try:</p>
 <ul>
 <li>Passing <code>POSTGRES=1</code> as an environment variable to use the Postgres database instead.</li>
-<li>Passing <code>WORKERS=1</code> as an environment variable to use a workerised setup instead. This option implies the use of Postgres.</li>
+<li>Passing <code>WORKERS=1</code> as an environment variable to use a workerised setup instead. This option implies the use of Postgres.
+<ul>
+<li>If setting <code>WORKERS=1</code>, optionally set <code>WORKER_TYPES=</code> to declare which worker
+types you wish to test. A simple comma-delimited string containing the worker types
+defined from the <code>WORKERS_CONFIG</code> template in
+<a href="https://github.com/matrix-org/synapse/blob/develop/docker/configure_workers_and_start.py#L54">here</a>.
+A safe example would be <code>WORKER_TYPES=&quot;federation_inbound, federation_sender, synchrotron&quot;</code>.
+See the <a href="../workers.html">worker documentation</a> for additional information on workers.</li>
 </ul>
+</li>
+<li>Passing <code>ASYNCIO_REACTOR=1</code> as an environment variable to use the Twisted asyncio reactor instead of the default one.</li>
+<li>Passing <code>PODMAN=1</code> will use the <a href="https://podman.io/">podman</a> container runtime, instead of docker.</li>
+<li>Passing <code>UNIX_SOCKETS=1</code> will utilise Unix socket functionality for Synapse, Redis, and Postgres(when applicable).</li>
+</ul>
+<p>To increase the log level for the tests, set <code>SYNAPSE_TEST_LOG_LEVEL</code>, e.g:</p>
+<pre><code class="language-sh">SYNAPSE_TEST_LOG_LEVEL=DEBUG COMPLEMENT_DIR=../complement ./scripts-dev/complement.sh -run TestImportHistoricalMessages
+</code></pre>
 <h3 id="prettier-formatting-with-gotestfmt"><a class="header" href="#prettier-formatting-with-gotestfmt">Prettier formatting with <code>gotestfmt</code></a></h3>
 <p>If you want to format the output of the tests the same way as it looks in CI,
-install <a href="https://github.com/haveyoudebuggedit/gotestfmt">gotestfmt</a>.</p>
+install <a href="https://github.com/GoTestTools/gotestfmt">gotestfmt</a>.</p>
 <p>You can then use this incantation to format the tests appropriately:</p>
 <pre><code class="language-sh">COMPLEMENT_DIR=../complement ./scripts-dev/complement.sh -json | gotestfmt -hide successful-tests
 </code></pre>
@@ -373,12 +436,12 @@ install <a href="https://github.com/haveyoudebuggedit/gotestfmt">gotestfmt</a>.<
 <li><code>git push</code> your commit to your fork of Synapse;</li>
 <li>on GitHub, <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">create the Pull Request</a>;</li>
 <li>add a <a href="#changelog">changelog entry</a> and push it to your Pull Request;</li>
-<li>for most contributors, that's all - however, if you are a member of the organization <code>matrix-org</code>, on GitHub, please request a review from <code>matrix.org / Synapse Core</code>.</li>
+<li>that's it for now, a non-draft pull request will automatically request review from the team;</li>
 <li>if you need to update your PR, please avoid rebasing and just add new commits to your branch.</li>
 </ol>
 <h2 id="changelog"><a class="header" href="#changelog">Changelog</a></h2>
 <p>All changes, even minor ones, need a corresponding changelog / newsfragment
-entry. These are managed by <a href="https://github.com/hawkowl/towncrier">Towncrier</a>.</p>
+entry. These are managed by <a href="https://github.com/twisted/towncrier">Towncrier</a>.</p>
 <p>To create a changelog entry, make a new file in the <code>changelog.d</code> directory named
 in the format of <code>PRnumber.type</code>. The type can be one of the following:</p>
 <ul>
@@ -392,7 +455,7 @@ in the format of <code>PRnumber.type</code>. The type can be one of the followin
 <p>This file will become part of our <a href="https://github.com/matrix-org/synapse/blob/master/CHANGES.md">changelog</a> at the next
 release, so the content of the file should be a short description of your
 change in the same style as the rest of the changelog. The file can contain Markdown
-formatting, and should end with a full stop (.) or an exclamation mark (!) for
+formatting, and must end with a full stop (.) or an exclamation mark (!) for
 consistency.</p>
 <p>Adding credits to the changelog is encouraged, we value your
 contributions and would like to have you shouted out in the release notes!</p>
@@ -414,8 +477,7 @@ chicken-and-egg problem.</p>
 <ol>
 <li>
 <p>Open the PR without a changelog file, see what number you got, and <em>then</em>
-add the changelog file to your branch (see <a href="#updating-your-pull-request">Updating your pull
-request</a>), or:</p>
+add the changelog file to your branch, or:</p>
 </li>
 <li>
 <p>Look at the <a href="https://github.com/matrix-org/synapse/issues?q=">list of all
@@ -522,7 +584,11 @@ be required.</p>
 <li>If there is any error, fix the error.</li>
 </ul>
 </li>
-<li>If a developer has requested changes, make these changes and let us know if it is ready for a developer to review again.</li>
+<li>If a developer has requested changes, make these changes and let us know if it is ready for a developer to review again.
+<ul>
+<li>A pull request is a conversation, if you disagree with the suggestions, please respond and discuss it.</li>
+</ul>
+</li>
 <li>Create a new commit with the changes.
 <ul>
 <li>Please do NOT overwrite the history. New commits make the reviewer's life easier.</li>
@@ -530,6 +596,8 @@ be required.</p>
 </ul>
 </li>
 <li>Back to 1.</li>
+<li>Once the pull request is ready for review again please re-request review from whichever developer did your initial
+review (or leave a comment in the pull request that you believe all required changes have been done).</li>
 </ol>
 <p>Once both the CI and the developers are happy, the patch will be merged into Synapse and released shortly!</p>
 <h1 id="11-find-a-new-issue"><a class="header" href="#11-find-a-new-issue">11. Find a new issue.</a></h1>
@@ -583,5 +651,7 @@ do!</p>
 
         <!-- Custom JS scripts -->
         <script type="text/javascript" src="../docs/website_files/table-of-contents.js"></script>
+        <script type="text/javascript" src="../docs/website_files/version-picker.js"></script>
+        <script type="text/javascript" src="../docs/website_files/version.js"></script>
     </body>
 </html>
