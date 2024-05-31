@@ -153,8 +153,8 @@ RUN --mount=type=cache,target=/synapse/target,sharing=locked \
   else \
   pip install --prefix="/install" --no-warn-script-location /synapse[all]; \
   fi
-RUN pip install --prefix="/install" --no-warn-script-location \
-  synapse-s3-storage-provider
+## because the latest release not include this pr https://github.com/matrix-org/synapse-s3-storage-provider/pull/109. if next time merge. can do update
+RUN pip install --prefix="/install" --no-warn-script-location git+https://github.com/matrix-org/synapse-s3-storage-provider@main
 RUN pip install --prefix="/install" --no-warn-script-location \
   slack_sdk
 ###
