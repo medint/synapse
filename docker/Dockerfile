@@ -153,7 +153,10 @@ RUN --mount=type=cache,target=/synapse/target,sharing=locked \
   else \
   pip install --prefix="/install" --no-warn-script-location /synapse[all]; \
   fi
-
+## because the latest release not include this pr https://github.com/matrix-org/synapse-s3-storage-provider/pull/109. if next time merge. can do update
+RUN pip install --prefix="/install" --no-warn-script-location git+https://github.com/matrix-org/synapse-s3-storage-provider@main
+RUN pip install --prefix="/install" --no-warn-script-location \
+  slack_sdk
 ###
 ### Stage 2: runtime
 ###
@@ -170,6 +173,8 @@ RUN \
   --mount=type=cache,target=/var/lib/apt,sharing=locked \
   apt-get update -qq && apt-get install -yqq \
   curl \
+  vim \
+  cron \
   gosu \
   libjpeg62-turbo \
   libpq5 \
@@ -184,6 +189,8 @@ RUN \
 COPY --from=builder /install /usr/local
 COPY ./docker/start.py /start.py
 COPY ./docker/conf /conf
+
+RUN mkdir -p /var/log && touch /var/log/cron.log
 
 EXPOSE 8008/tcp 8009/tcp 8448/tcp
 
